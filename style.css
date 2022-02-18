@@ -4,11 +4,17 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: red;
+}
+
 .container {
   width: 35%;
   margin: 2rem auto;
   border: 2px solid gainsboro;
   border-radius: 5px;
+  box-shadow: 5px 5px 5px 5px #999;
+  background-color: #fff;
 }
 
 .card-img-top {
@@ -56,4 +62,26 @@
 
 .fas {
   cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: aqua;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-body button {
+    width: 5rem;
+  }
+
+  .card-link {
+    font-size: 0.8rem;
+  }
+
+  .car-footer {
+    font-size: 16px;
+  }
 }
